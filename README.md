@@ -1,4 +1,6 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## About Project
+
+This is my side project. When creating websites for clients, I often reuse the same components, so I decided to share them with you. It also helps me keep everything in one place
 
 ## Getting Started
 

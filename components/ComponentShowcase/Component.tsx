@@ -1,4 +1,4 @@
-import SlimeButton from "../Showcase/SlimeButton";
+import GradientButton from "./Components/Buttons/GradientButton/GradientButton";
 
 const Component = ({ selected }: { selected: boolean }) => {
   return (
@@ -7,7 +7,7 @@ const Component = ({ selected }: { selected: boolean }) => {
         !selected ? "hidden" : "block"
       }`}
     >
-      <SlimeButton />
+      <GradientButton link="">Button</GradientButton>
     </div>
   );
 };

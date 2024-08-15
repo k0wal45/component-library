@@ -1,6 +1,4 @@
 "use client";
-import { useState } from "react";
-import { motion, useMotionValueEvent, useScroll } from "framer-motion";
 import Link from "next/link";
 import { FaMoon } from "react-icons/fa";
 import { usePathname } from "next/navigation";
@@ -8,29 +6,8 @@ import { usePathname } from "next/navigation";
 const Navbar = () => {
   const curretPath = usePathname();
 
-  const { scrollY } = useScroll();
-
-  const [hidden, setHidden] = useState(false);
-
-  useMotionValueEvent(scrollY, "change", (latest: any) => {
-    const previous: any = scrollY.getPrevious();
-    if (latest > previous && latest > 150) {
-      setHidden(true);
-    } else {
-      setHidden(false);
-    }
-  });
-
   return (
-    <motion.nav
-      variants={{
-        visible: { y: 0 },
-        hidden: { y: "-100%" },
-      }}
-      animate={hidden ? "hidden" : "visible"}
-      transition={{ duration: 0.35, ease: "easeInOut" }}
-      className="fixed top-0 left-0 w-full px-4 h-16 flex justify-center items-center lg:px-20 z-40 bg-white border-b-2 border-neutral-900 overflow-hidden"
-    >
+    <nav className="fixed top-0 left-0 w-full px-4 h-16 flex justify-center items-center lg:px-20 z-40 bg-white border-b-2 border-neutral-900 overflow-hidden">
       <div className="max-w-7xl w-full flex justify-between items-center h-full">
         <Link href="/" className="flex items-center gap-2">
           <div className="grid place-items-center bg-neutral-900 p-2 rounded-lg">
@@ -47,7 +24,7 @@ const Navbar = () => {
             </Link>
 
             <div
-              className={`absolute w-full bottom-0 left-0 h-2 bg-primary z-[-1] transition-transform duration-200 ease-in-out ${
+              className={`absolute w-full bottom-0 left-0 h-2 bg-primary z-[-1] transition-transform duration-600 ease-in-out ${
                 curretPath.startsWith("/components")
                   ? "translate-y-0"
                   : "translate-y-12"
@@ -61,7 +38,7 @@ const Navbar = () => {
               About
             </Link>
             <div
-              className={`absolute w-full bottom-0 left-0 h-2 bg-primary z-[-1] transition-transform duration-200 ease-in-out ${
+              className={`absolute w-full bottom-0 left-0 h-2 bg-primary z-[-1] transition-transform duration-600 ease-in-out ${
                 curretPath.startsWith("/about")
                   ? "translate-y-0"
                   : "translate-y-12"
@@ -71,7 +48,7 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
-    </motion.nav>
+    </nav>
   );
 };
 

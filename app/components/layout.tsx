@@ -9,11 +9,11 @@ const layout = ({
 }>) => {
   return (
     <main>
-      <ul className="fixed top-0 left-0 flex flex-col h-screen bg-white pt-20 px-2 overflow-scroll scroll-smooth scroll-hide">
+      <ul className="fixed top-0 left-0 hidden md:flex flex-col h-screen bg-white pt-20 px-2 overflow-scroll scroll-smooth scroll-hide">
         <li>
           <Link
             href="/components"
-            className="text-lg text-primary flex items-center gap-2 font-semibold"
+            className="text-lg text-primary flex items-center gap-2 font-semibold cursor-pointer"
           >
             <IoFileTrayStackedSharp />
             All Components
@@ -30,7 +30,7 @@ const layout = ({
             {data.array.map((name) => (
               <li
                 key={name}
-                className="w-full p-1 px-2 hover:bg-neutral-200 rounded-sm"
+                className="w-full p-1 px-2 hover:bg-neutral-200 rounded-sm cursor-pointer"
               >
                 {name}
               </li>
@@ -38,7 +38,7 @@ const layout = ({
           </ul>
         ))}
       </ul>
-      <div className="ml-52 w-[calc(100vw-13rem)]">{children}</div>
+      <div className="md:ml-52 md:w-[calc(100vw-15rem)]">{children}</div>
     </main>
   );
 };

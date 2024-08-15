@@ -1,8 +1,12 @@
+import LinkToComponent from "@/components/ComponentShowcase/LinkToComponent";
 import React from "react";
+import { FaHamburger } from "react-icons/fa";
+
+export const revalidate = 10;
 
 const page = () => {
   return (
-    <div className="max-w-5xl flex flex-col gap-8 mt-20 mx-auto w-full">
+    <div className="max-w-6xl flex flex-col gap-6 mt-20 mx-auto w-full p-4">
       <h1 className="text-4xl font-semibold">All Components</h1>
       <p className="max-w-2xl">
         Components are built with{" "}
@@ -43,6 +47,39 @@ const page = () => {
           lunarisweb.pl@gmail.com
         </a>
       </p>
+      {/* list of components */}
+      <div className="flex flex-wrap gap-8">
+        <LinkToComponent
+          href="slug"
+          title="Navbar"
+          icon={<FaHamburger />}
+          index={0}
+        />
+        <LinkToComponent
+          href=""
+          title="Navbar"
+          icon={<FaHamburger />}
+          index={0}
+        />
+        <LinkToComponent
+          href=""
+          title="Navbar"
+          icon={<FaHamburger />}
+          index={0}
+        />
+        <LinkToComponent
+          href=""
+          title="Navbar"
+          icon={<FaHamburger />}
+          index={0}
+        />
+        <LinkToComponent
+          href=""
+          title="Navbar"
+          icon={<FaHamburger />}
+          index={0}
+        />
+      </div>
     </div>
   );
 };

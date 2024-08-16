@@ -14,8 +14,6 @@ const Toggle = ({
   selected: ToggleOptionsType;
   setSelected: Dispatch<SetStateAction<ToggleOptionsType>>;
 }) => {
-  console.log(selected);
-
   return (
     <div className="relative flex w-fit items-center rounded-full">
       <button

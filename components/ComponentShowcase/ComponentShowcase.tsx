@@ -7,7 +7,7 @@ const ComponentShowcase = ({ component }: any) => {
   const [selected, setSelected] = useState(true);
 
   return (
-    <section className="p-12 w-full h-fit">
+    <section className="w-full h-fit">
       <div className="flex justify-between py-4">
         <h3 className="text-xl font-bold">{component.name}</h3>
         <Toggle selected={selected} setSelected={setSelected} />

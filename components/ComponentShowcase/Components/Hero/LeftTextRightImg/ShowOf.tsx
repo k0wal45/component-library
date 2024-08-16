@@ -19,7 +19,7 @@ const TextLeftHero = () => {
   return (
     <header
       id="glowna"
-      className="flex flex-col lg:flex-row justify-center gap-4 items-center lg:px-48 min-h-screen max-w-screen py-24 pb-12 bg-photo shadow-2xl bg-neutral-800"
+      className="flex flex-col lg:flex-row justify-center gap-4 items-center lg:px-48 min-h-screen max-w-screen py-24 pb-12 shadow-2xl bg-neutral-800"
     >
       <div className="flex flex-col justify-center items-start lg:max-w-[40vw] p-4 gap-8">
         <h1 className="text-4xl lg:text-6xl font-bold  text-white">

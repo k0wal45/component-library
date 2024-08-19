@@ -20,7 +20,7 @@ const HowToUse = () => {
   };
 
   return (
-    <section className="min-h-screen flex flex-col gap-4 items-start justify-center w-fit mx-auto">
+    <section className="min-h-screen flex flex-col gap-4 items-start justify-center w-screen md:w-fit mx-auto p-4 overflow-hidden">
       <h4 className="text-6xl font-extrabold text-neutral-800 mb-8">
         How to use?
       </h4>
@@ -34,7 +34,7 @@ const HowToUse = () => {
         selected={framework}
         setSelected={setFramework}
       />
-      <div className="w-[30rem] rounded-xl bg-neutral-300 p-6 shadow-xl tracking-widest flex justify-between">
+      <div className="w-full md:w-[30rem] rounded-xl bg-neutral-300 p-6 shadow-xl tracking-widest flex justify-between gap-2">
         {handleFrameworkChange()}
         <div
           onClick={() => copyToClipboard(handleFrameworkChange())}
@@ -51,7 +51,7 @@ const HowToUse = () => {
         selected={tailwind}
         setSelected={setTailwind}
       />
-      <div className="w-[30rem] rounded-xl bg-neutral-300 p-6 shadow-xl tracking-widest flex justify-between">
+      <div className="w-full md:w-[30rem] rounded-xl bg-neutral-300 p-6 shadow-xl tracking-widest flex justify-between">
         npm install -D tailwindcss
         <div
           onClick={() => copyToClipboard("npm install -D tailwindcss")}
@@ -82,7 +82,7 @@ const HowToUse = () => {
       {/* third step */}
       <p className="text-xl text-neutral-600">3. Install Framer Motion</p>
 
-      <div className="w-[30rem] rounded-xl bg-neutral-300 p-6 shadow-xl tracking-widest flex justify-between">
+      <div className="w-full md:w-[30rem] rounded-xl bg-neutral-300 p-6 shadow-xl tracking-widest flex justify-between">
         npm install framer-motion
         <div
           onClick={() => copyToClipboard("npm install framer-motion")}

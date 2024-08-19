@@ -20,10 +20,7 @@ const Technologies = () => {
   );
 
   return (
-    <section
-      ref={ref}
-      className="flex flex-col lg:flex-row items-center justify-center gap-12 p-4 mx-auto"
-    >
+    <section className="flex flex-col lg:flex-row items-center justify-center gap-12 p-4 mx-auto overflow-hidden">
       <div className="flex flex-col sm:flex-row gap-8 items-center justify-center w-full max-w-2xl">
         <TechIcon name="Next JS" icon="nextjs.png" />
         <div className="flex flex-col items-center gap-8">
@@ -32,7 +29,10 @@ const Technologies = () => {
         </div>
         <TechIcon name="React JS" icon="reactjs.png" />
       </div>
-      <div className="flex flex-col gap-6 justify-center max-w-3xl w-full">
+      <div
+        className="flex flex-col gap-6 justify-center max-w-3xl w-full"
+        ref={ref}
+      >
         <motion.h3
           style={{ scale: scale, translateX: translateReverse }}
           className="text-5xl md:text-7xl font-black text-neutral-900 max-w-3xl origin-bottom-right"

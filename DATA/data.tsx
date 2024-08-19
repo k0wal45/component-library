@@ -1,3 +1,4 @@
+import { IoMdMenu } from "react-icons/io";
 import {
   GradientButtonCode,
   GradientButtonShowOf,
@@ -10,22 +11,26 @@ import {
   TextLeftHeroCode,
   TextLeftHeroShowOf,
 } from "../components/ComponentShowcase/Components/Hero/LeftTextRightImg/ShowOf";
+import { FaMedal } from "react-icons/fa";
 
 const componentsData = [
   {
-    type: "Button Of Gradient",
+    type: "Button",
+    icon: <IoMdMenu />,
     name: "Gradient Button",
     showOf: <GradientButtonShowOf />,
     code: GradientButtonCode,
   },
   {
     type: "Hero",
+    icon: <FaMedal />,
     name: "Text on left Hero",
     showOf: <TextLeftHeroShowOf />,
     code: TextLeftHeroCode,
   },
   {
     type: "Hero",
+    icon: <FaMedal />,
     name: "Center with overlay image",
     showOf: <CenterTextBgImageShowOf />,
     code: CenterTextBgImageCode,

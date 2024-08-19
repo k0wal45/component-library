@@ -1,10 +1,19 @@
 import LinkToComponent from "@/components/ComponentShowcase/LinkToComponent";
+import componentsData from "@/DATA/data";
+import { createLink, groupComponentsByType } from "@/DATA/helpers";
 import React from "react";
-import { FaHamburger } from "react-icons/fa";
+
+interface ComponentGroup {
+  type: string;
+  icon: any;
+  names: string[];
+}
 
 export const revalidate = 10;
 
 const page = () => {
+  const components = groupComponentsByType(componentsData);
+
   return (
     <div className="max-w-6xl flex flex-col gap-6 mt-20 mx-auto w-full p-4">
       <h1 className="text-4xl font-semibold">All Components</h1>
@@ -49,36 +58,15 @@ const page = () => {
       </p>
       {/* list of components */}
       <div className="flex flex-wrap gap-8">
-        <LinkToComponent
-          href="slug"
-          title="Navbar"
-          icon={<FaHamburger />}
-          index={0}
-        />
-        <LinkToComponent
-          href=""
-          title="Navbar"
-          icon={<FaHamburger />}
-          index={0}
-        />
-        <LinkToComponent
-          href=""
-          title="Navbar"
-          icon={<FaHamburger />}
-          index={0}
-        />
-        <LinkToComponent
-          href=""
-          title="Navbar"
-          icon={<FaHamburger />}
-          index={0}
-        />
-        <LinkToComponent
-          href=""
-          title="Navbar"
-          icon={<FaHamburger />}
-          index={0}
-        />
+        {components.map((component: ComponentGroup, index: number) => (
+          <LinkToComponent
+            href={createLink(component.type)}
+            title={component.type}
+            icon={component.icon}
+            index={index}
+            key={index}
+          />
+        ))}
       </div>
     </div>
   );

@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+body,
+html {
+  @apply scroll-smooth;
+}
+
 .scroll-hide:-webkit-scrollbar {
   display: none;
 }

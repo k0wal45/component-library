@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
-import { FaMoon } from "react-icons/fa";
 import { usePathname } from "next/navigation";
+import LogoLunarisUi from "@/components/Logo";
 
 const Navbar = () => {
   const curretPath = usePathname();
@@ -10,10 +10,8 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 w-full px-4 h-16 flex justify-center items-center lg:px-20 z-40 bg-white border-b-2 border-neutral-900 overflow-hidden">
       <div className="max-w-7xl w-full flex justify-between items-center h-full">
         <Link href="/" className="flex items-center gap-2">
-          <div className="grid place-items-center bg-neutral-900 p-2 rounded-lg">
-            <FaMoon className="text-white" />
-          </div>
-          <p className="text-3xl font-bold text-black hidden sm:block">
+          <LogoLunarisUi />
+          <p className="text-3xl font-bold text-black hidden sm:block whitespace-nowrap">
             Lunaris UI
           </p>
         </Link>

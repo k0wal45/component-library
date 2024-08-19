@@ -1,5 +1,6 @@
 interface ComponentItem {
   type: string;
+  icon: any;
   name: string;
   showOf: JSX.Element;
   code: string;
@@ -7,20 +8,22 @@ interface ComponentItem {
 
 interface ComponentGroup {
   type: string;
+  icon: any;
   names: string[];
 }
 
 export const groupComponentsByType = (
-  components: { type: string; name: string }[]
+  components: { type: string; name: string; icon: any }[]
 ): ComponentGroup[] => {
   const groupedComponents: { [key: string]: ComponentGroup } = {};
 
   components.forEach((component) => {
-    const { type, name } = component;
+    const { type, name, icon } = component;
 
     if (!groupedComponents[type]) {
       groupedComponents[type] = {
         type: type,
+        icon: icon,
         names: [],
       };
     }

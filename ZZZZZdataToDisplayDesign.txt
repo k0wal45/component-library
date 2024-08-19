@@ -1,3 +1,0 @@
-ZZZZZ for it to display at the end of my tree file in vs code
-
-data is just a array of components

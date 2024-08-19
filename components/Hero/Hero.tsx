@@ -25,7 +25,7 @@ const Hero = () => {
           </p>
         </Reveal>
         <Reveal>
-          <div className="flex gap-4">
+          <div className="flex flex-wrap gap-4">
             <GradientButton link="/components">Components</GradientButton>
             <Link
               href="https://daniel-kowalski.com/"

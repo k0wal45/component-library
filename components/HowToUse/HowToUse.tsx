@@ -2,7 +2,6 @@
 import { FaCopy } from "react-icons/fa";
 import UniversalToogle from "./Toggle";
 import { useState } from "react";
-import { motion } from "framer-motion";
 
 const copyToClipboard = (string: string) => {
   navigator.clipboard.writeText(string);

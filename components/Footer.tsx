@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 function Footer() {
@@ -6,14 +7,18 @@ function Footer() {
   const year = date.getFullYear();
   const curretPath = usePathname();
   return (
-    <footer className="px-8 p-4 bg-base-200 flex flex-col items-center text-center shadow-inner text-lg gap-1">
-      <div className="items-center grid-flow-col">
-        <p>Copyright © {year} - All right reserved</p>
-      </div>
-      <div className="w-48 h-[1px] bg-neutral-300"></div>
-      <div>
+    <footer className="px-8 p-4 bg-base-200 flex items-center justify-around text-center shadow-inner text-lg gap-1 h-48">
+      <div className="flex items-center justify-start text-start gap-4">
+        <Image
+          width={200}
+          height={200}
+          alt=""
+          src="/img/me.png"
+          className="w-20 aspect-square rounded-xl"
+        />
         <p>
-          Created by:{" "}
+          Created by:
+          <br />
           <a
             target="_blank"
             href="https://daniel-kowalski.com"

@@ -12,7 +12,6 @@ export default function Home() {
       <CopyPaste />
       <Technologies />
       <HowToUse />
-      <div className="h-screen"></div>
     </main>
   );
 }

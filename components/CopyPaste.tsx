@@ -17,7 +17,7 @@ const CopyPaste = () => {
 
   return (
     <section
-      className="h-screen w-full flex flex-col gap-6 items-center justify-center text-center p-4 relative overflow-hidden"
+      className="h-screen w-full flex flex-col gap-6 items-center justify-center text-center p-4 relative overflow-visible"
       ref={ref}
     >
       <h2 className="text-5xl lg:text-7xl font-[800] w-fit bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent py-2 max-w-3xl tracking-widest">
@@ -41,7 +41,7 @@ const CopyPaste = () => {
         <motion.div
           style={{ scale: scale }}
           transition={{ duration: 200, ease: "easeInOut" }}
-          className="bg-neutral-200 size-[40rem] rounded-full grid place-items-center blur-lg"
+          className="bg-neutral-300 size-[40rem] rounded-full grid place-items-center blur-xl"
         >
           <div className="bg-white size-72 rounded-full"></div>
         </motion.div>

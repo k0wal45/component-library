@@ -8,7 +8,7 @@ import AppearFromBottom from "../Animations/AppearFromBottom";
 const Hero = () => {
   return (
     <header
-      className="w-full min-h-screen bg-gradient-to-br from-neutral-300 to-white p-4
+      className="w-full min-h-screen p-4
     flex flex-col lg:flex-row gap-12 items-center justify-center py-12
     "
     >

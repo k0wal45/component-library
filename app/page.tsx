@@ -7,7 +7,7 @@ export const revalidate = 10;
 
 export default function Home() {
   return (
-    <main>
+    <main className="overflow-hidden">
       <Hero />
       <CopyPaste />
       <Technologies />

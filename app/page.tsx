@@ -1,3 +1,4 @@
+import About from "@/components/About";
 import CopyPaste from "@/components/CopyPaste";
 import Hero from "@/components/Hero/Hero";
 import HowToUse from "@/components/HowToUse/HowToUse";
@@ -11,6 +12,7 @@ export default function Home() {
       <Hero />
       <CopyPaste />
       <Technologies />
+      <About />
       <HowToUse />
     </main>
   );

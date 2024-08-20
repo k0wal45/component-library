@@ -7,7 +7,7 @@ const Navbar = () => {
   const curretPath = usePathname();
 
   return (
-    <nav className="fixed top-0 left-0 w-full px-4 h-16 flex justify-center items-center lg:px-20 z-40 bg-white border-b-2 border-neutral-900 overflow-hidden">
+    <nav className="fixed top-0 left-0 w-full px-4 h-16 flex justify-center items-center lg:px-20 z-50 bg-white border-b-2 border-neutral-900 overflow-hidden">
       <div className="max-w-7xl w-full flex justify-between items-center h-full">
         <Link href="/" className="flex items-center gap-2">
           <LogoLunarisUi />

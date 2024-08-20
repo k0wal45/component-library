@@ -57,7 +57,7 @@ const page = () => {
         </a>
       </p>
       {/* list of components */}
-      <div className="flex flex-wrap gap-8">
+      <ul className="flex flex-wrap gap-8">
         {components.map((component: ComponentGroup, index: number) => (
           <LinkToComponent
             href={createLink(component.type)}
@@ -67,7 +67,7 @@ const page = () => {
             key={index}
           />
         ))}
-      </div>
+      </ul>
     </div>
   );
 };

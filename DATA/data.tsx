@@ -1,17 +1,30 @@
 import { IoMdMenu } from "react-icons/io";
+import { FaMedal } from "react-icons/fa";
 import {
   GradientButtonCode,
   GradientButtonShowOf,
-} from "../components/ComponentShowcase/Components/Buttons/GradientButton/ShowOf";
-import {
-  CenterTextBgImageCode,
-  CenterTextBgImageShowOf,
-} from "../components/ComponentShowcase/Components/Hero/CenterTextBgImage/CenterTextBgImageShowOf";
+} from "@/other/Buttons/GradientButton/ShowOf";
 import {
   TextLeftHeroCode,
   TextLeftHeroShowOf,
-} from "../components/ComponentShowcase/Components/Hero/LeftTextRightImg/ShowOf";
-import { FaMedal } from "react-icons/fa";
+} from "@/other/Hero/LeftTextRightImg/ShowOf";
+import {
+  CenterTextBgImageCode,
+  CenterTextBgImageShowOf,
+} from "@/other/Hero/CenterTextBgImage/CenterTextBgImageShowOf";
+import {
+  MarginAroundCode,
+  MarginAroundShowOf,
+} from "@/other/Hero/MarginAround/MarginAroundShowOf";
+import { CgCardDiamonds } from "react-icons/cg";
+import {
+  DarkOnHoverCode,
+  DarkOnHoverShowOf,
+} from "@/other/Cards/DarkOnHover/DarkOnHoverShowOf";
+import {
+  ShuffleInBackCode,
+  ShuffleInBackShowOf,
+} from "@/other/Cards/ShuffleInBack/ShuffleInBackShowOf";
 
 const componentsData = [
   {
@@ -34,6 +47,27 @@ const componentsData = [
     name: "Center with overlay image",
     showOf: <CenterTextBgImageShowOf />,
     code: CenterTextBgImageCode,
+  },
+  {
+    type: "Hero",
+    icon: <FaMedal />,
+    name: "Margin around",
+    showOf: <MarginAroundShowOf />,
+    code: MarginAroundCode,
+  },
+  {
+    type: "Cards",
+    icon: <CgCardDiamonds />,
+    name: "Dark on Hover",
+    showOf: <DarkOnHoverShowOf />,
+    code: DarkOnHoverCode,
+  },
+  {
+    type: "Cards",
+    icon: <CgCardDiamonds />,
+    name: "Shuffle in back",
+    showOf: <ShuffleInBackShowOf />,
+    code: ShuffleInBackCode,
   },
 ];
 

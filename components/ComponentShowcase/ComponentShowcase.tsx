@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import Code from "./Code";
 import Toggle from "./Toggle";
+import { createLink } from "@/DATA/helpers";
 
 const ComponentShowcase = ({ component }: any) => {
   const [selected, setSelected] = useState(true);
@@ -13,8 +14,13 @@ const ComponentShowcase = ({ component }: any) => {
         <Toggle selected={selected} setSelected={setSelected} />
       </div>
 
-      <div className="w-full relative h-full">
-        <div className={!selected ? "hidden" : "block"}>{component.showOf}</div>
+      <div className="w-full relative h-full z-40">
+        <div
+          className={!selected ? "hidden" : "block"}
+          id={createLink(component.name)}
+        >
+          {component.showOf}
+        </div>
         <div
           className={`max-h-[30rem] w-full overflow-scroll z-20 ${
             selected ? "hidden" : "block"

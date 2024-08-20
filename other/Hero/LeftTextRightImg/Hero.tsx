@@ -1,5 +1,6 @@
 import Image from "next/image";
-import Link from "next/link";
+
+// replace image for yors to work
 
 const TextLeftHero = () => {
   return (

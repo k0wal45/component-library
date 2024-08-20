@@ -18,8 +18,8 @@ const Layout = ({
   const components = groupComponentsByType(componentsData);
 
   return (
-    <main>
-      <ul className="fixed top-0 left-0 hidden md:flex flex-col h-screen max-w-[15rem] bg-white pt-20 px-2 overflow-scroll scroll-smooth scroll-hide">
+    <main className="flex justify-center">
+      <ul className="sticky top-0 left-0 hidden xl:flex flex-col h-screen w-[15rem] bg-white pt-20 px-2 overflow-scroll scroll-smooth scroll-hide">
         <li>
           <Link
             href="/components"
@@ -33,10 +33,18 @@ const Layout = ({
         {components.map((data: ComponentGroup) => (
           <ul key={data.type} className="p-2 flex flex-col font-medium text-sm">
             <li className="font-semibold text-neutral-400 pl-[-1.5rem]">
-              {data.type} {/* Corrected from `data.title` to `data.type` */}
+              <Link href={createLink(data.type)}>{data.type}</Link>
             </li>
             {data.names.map((name) => (
-              <Link key={name} href={"/components/" + createLink(data.type)}>
+              <Link
+                key={name}
+                href={
+                  "/components/" +
+                  createLink(data.type) +
+                  "#" +
+                  createLink(name)
+                }
+              >
                 <li className="w-full p-1 px-2 hover:bg-neutral-200 rounded-sm cursor-pointer">
                   {name}
                 </li>
@@ -45,7 +53,7 @@ const Layout = ({
           </ul>
         ))}
       </ul>
-      <div className="md:ml-64 md:w-[calc(100vw-20rem)]">{children}</div>
+      {children}
     </main>
   );
 };

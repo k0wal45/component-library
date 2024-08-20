@@ -1,5 +1,5 @@
 import React from "react";
-import GradientButton from "../ComponentShowcase/Components/Buttons/GradientButton/GradientButton";
+import GradientButton from "../../other/Buttons/GradientButton/GradientButton";
 import ThreeDHoverScreenCard from "./Item";
 import Link from "next/link";
 import Reveal from "../Animations/Reveal";

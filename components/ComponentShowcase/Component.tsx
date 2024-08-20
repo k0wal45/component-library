@@ -1,4 +1,4 @@
-import GradientButton from "./Components/Buttons/GradientButton/GradientButton";
+import GradientButton from "../../other/Buttons/GradientButton/GradientButton";
 
 const Component = ({ selected }: { selected: boolean }) => {
   return (

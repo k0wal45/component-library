@@ -13,7 +13,7 @@ const Page = () => {
 
   if (data.components.length !== 0) {
     return (
-      <div className="mt-24 flex flex-col gap-8 p-4">
+      <div className="mt-24 flex flex-col gap-8 p-4 w-full max-w-8xl">
         <div className="flex flex-col">
           <p className="text-neutral-600">Components / {data.name}</p>
           <h1 className="text-4xl text-neutral-900 font-semibold">

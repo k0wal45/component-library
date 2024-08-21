@@ -41,6 +41,15 @@ import {
   HoverButtonCode,
   HoverButtonShowOf,
 } from "@/other/Buttons/HoverButton/HoverButtonShowOf";
+import {
+  DashedButtonCode,
+  DashedButtonShowOf,
+} from "@/other/Buttons/DashedButton/DashedButtonShowOf";
+import {
+  TestimonialCarouselCode,
+  TestimonialCarouselShowOf,
+} from "@/other/Testimonials/Carousels/TestimonialCarouselShowOf";
+import { FaMessage } from "react-icons/fa6";
 
 const componentsData = [
   {
@@ -49,6 +58,13 @@ const componentsData = [
     name: "Gradient Button",
     showOf: <GradientButtonShowOf />,
     code: GradientButtonCode,
+  },
+  {
+    type: "Button",
+    icon: <IoMdMenu />,
+    name: "Dashed Button",
+    showOf: <DashedButtonShowOf />,
+    code: DashedButtonCode,
   },
   {
     type: "Button",
@@ -112,6 +128,13 @@ const componentsData = [
     name: "Simple Form",
     showOf: <SimpleFormShowOf />,
     code: SimpleFormCode,
+  },
+  {
+    type: "Testimonials",
+    icon: <FaMessage />,
+    name: "Testimonials Carousel",
+    showOf: <TestimonialCarouselShowOf />,
+    code: TestimonialCarouselCode,
   },
 ];
 

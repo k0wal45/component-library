@@ -16,7 +16,9 @@ const ComponentShowcase = ({ component }: any) => {
 
       <div className="w-full relative h-full z-40">
         <div
-          className={!selected ? "hidden" : "block"}
+          className={`${
+            !selected ? "hidden" : "block"
+          } border-[1px] border-neutral-300`}
           id={createLink(component.name)}
         >
           {component.showOf}

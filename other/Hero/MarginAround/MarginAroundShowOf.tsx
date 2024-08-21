@@ -3,10 +3,7 @@ import { MarginAround } from "./MarginAround";
 
 export const MarginAroundShowOf = () => {
   return (
-    <div className="bg-neutral-200 p-6 lg:p-12 relative">
-      <p className="bottom-2 left-2 absolute">
-        this grey is just to mark the margin
-      </p>
+    <div className="p-6 lg:p-12">
       <MarginAround />
     </div>
   );

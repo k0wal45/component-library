@@ -1,5 +1,5 @@
 import { IoMdMenu } from "react-icons/io";
-import { FaMedal } from "react-icons/fa";
+import { FaMedal, FaPhone } from "react-icons/fa";
 import {
   GradientButtonCode,
   GradientButtonShowOf,
@@ -25,6 +25,22 @@ import {
   ShuffleInBackCode,
   ShuffleInBackShowOf,
 } from "@/other/Cards/ShuffleInBack/ShuffleInBackShowOf";
+import {
+  ReservationFormCode,
+  ReservationFormShowOf,
+} from "@/other/Contact/ReservationForm/ReservationFormShowOf";
+import {
+  GridFormCode,
+  GridFormShowOf,
+} from "@/other/Contact/GridForm/GridFormShowOf";
+import {
+  SimpleFormCode,
+  SimpleFormShowOf,
+} from "@/other/Contact/SimpleForm/SimpleFormShowOf";
+import {
+  HoverButtonCode,
+  HoverButtonShowOf,
+} from "@/other/Buttons/HoverButton/HoverButtonShowOf";
 
 const componentsData = [
   {
@@ -33,6 +49,13 @@ const componentsData = [
     name: "Gradient Button",
     showOf: <GradientButtonShowOf />,
     code: GradientButtonCode,
+  },
+  {
+    type: "Button",
+    icon: <IoMdMenu />,
+    name: "Hover Button",
+    showOf: <HoverButtonShowOf />,
+    code: HoverButtonCode,
   },
   {
     type: "Hero",
@@ -68,6 +91,27 @@ const componentsData = [
     name: "Shuffle in back",
     showOf: <ShuffleInBackShowOf />,
     code: ShuffleInBackCode,
+  },
+  {
+    type: "Contact",
+    icon: <FaPhone />,
+    name: "Reservation Form",
+    showOf: <ReservationFormShowOf />,
+    code: ReservationFormCode,
+  },
+  {
+    type: "Contact",
+    icon: <FaPhone />,
+    name: "Grid Form",
+    showOf: <GridFormShowOf />,
+    code: GridFormCode,
+  },
+  {
+    type: "Contact",
+    icon: <FaPhone />,
+    name: "Simple Form",
+    showOf: <SimpleFormShowOf />,
+    code: SimpleFormCode,
   },
 ];
 

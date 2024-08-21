@@ -17,7 +17,7 @@ const About = () => {
     "
     >
       <div className="col-span-8 lg:col-span-3 relative overflow-hidden group p-4 flex items-center">
-        <h4 className="text-6xl font-bold text-neutral-400 group-hover:text-neutral-200 duration-300">
+        <h4 className="text-6xl font-bold text-neutral-800 group-hover:text-neutral-200 duration-300">
           About
         </h4>
         <FaQuestion className="absolute top-0 right-0 text-8xl text-neutral-400/30 -rotate-[30deg] scale-150 z-[-1]" />

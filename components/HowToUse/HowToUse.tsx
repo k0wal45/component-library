@@ -61,9 +61,11 @@ const HowToUse = () => {
       </div>
       {tailwind ? (
         <p className="text-neutral-400">
-          // if you're using next js it will ask you if you want to use next js.
+          // if you're using next js it asked you if you want to use next js.
           <br />
-          // Say yes and continue
+          // if you said yes, skip this step
+          <br />
+          // if you said no, install dependencie
         </p>
       ) : (
         <p className="text-neutral-400">

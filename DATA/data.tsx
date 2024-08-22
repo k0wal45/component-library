@@ -1,5 +1,5 @@
 import { IoMdMenu } from "react-icons/io";
-import { FaMedal, FaPhone } from "react-icons/fa";
+import { FaMedal, FaPhone, FaQuestion } from "react-icons/fa";
 import {
   GradientButtonCode,
   GradientButtonShowOf,
@@ -50,6 +50,18 @@ import {
   TestimonialCarouselShowOf,
 } from "@/other/Testimonials/Carousels/TestimonialCarouselShowOf";
 import { FaMessage } from "react-icons/fa6";
+import {
+  FullWidthTestimonialCode,
+  FullWidthTestimonialsShowOf,
+} from "@/other/Testimonials/FullWidth/FullWidthTestimonialsShowOf";
+import {
+  FAQPhotoCode,
+  FAQPhotoShowOf,
+} from "@/other/FAQ/FAQPhoto/FAQPhotoShowOf";
+import {
+  FAQPhotoInfoCode,
+  FAQPhotoInfoShowOf,
+} from "@/other/FAQ/FAQPhotoInfo/FAQPhotoInfoShowOf";
 
 const componentsData = [
   {
@@ -135,6 +147,27 @@ const componentsData = [
     name: "Testimonials Carousel",
     showOf: <TestimonialCarouselShowOf />,
     code: TestimonialCarouselCode,
+  },
+  {
+    type: "Testimonials",
+    icon: <FaMessage />,
+    name: "Full Width Carousel",
+    showOf: <FullWidthTestimonialsShowOf />,
+    code: FullWidthTestimonialCode,
+  },
+  {
+    type: "FAQ",
+    icon: <FaQuestion />,
+    name: "FAQ with photo",
+    showOf: <FAQPhotoShowOf />,
+    code: FAQPhotoCode,
+  },
+  {
+    type: "FAQ",
+    icon: <FaQuestion />,
+    name: "FAQ with contact info",
+    showOf: <FAQPhotoInfoShowOf />,
+    code: FAQPhotoInfoCode,
   },
 ];
 

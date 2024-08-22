@@ -53,7 +53,7 @@ const Layout = ({
           </ul>
         ))}
       </ul>
-      {children}
+      <div className="w-full overflow-hidden">{children}</div>
     </main>
   );
 };

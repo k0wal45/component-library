@@ -24,7 +24,7 @@ const ComponentShowcase = ({ component }: any) => {
           {component.showOf}
         </div>
         <div
-          className={`max-h-[30rem] w-full overflow-scroll z-20 ${
+          className={`max-h-[30rem] w-full overflow-y-scroll z-20 ${
             selected ? "hidden" : "block"
           }`}
         >

@@ -20,7 +20,7 @@ const TextLeftHero = () => {
       <Image
         width={800}
         height={700}
-        src="/components/hero/safe.png"
+        src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         alt="Laptop Bezpiecznie"
         className="w-[80vw] lg:max-w-[50%] lg:w-full"
       />

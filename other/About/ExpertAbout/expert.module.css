@@ -1,0 +1,26 @@
+.bgBoxes {
+  background-color: #000000;
+  opacity: 1;
+  background-image: linear-gradient(#242424 2px, transparent 2px),
+    linear-gradient(to right, #242424 2px, #000000 2px);
+  background-size: 100px 100px;
+}
+.bgRoudedMask {
+  background: rgb(0, 0, 0);
+  background: -moz-radial-gradient(
+    circle,
+    rgba(0, 0, 0, 0) 56%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  background: -webkit-radial-gradient(
+    circle,
+    rgba(0, 0, 0, 0) 56%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  background: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 0) 56%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
+}

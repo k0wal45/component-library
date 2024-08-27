@@ -62,6 +62,15 @@ import {
   FAQPhotoInfoCode,
   FAQPhotoInfoShowOf,
 } from "@/other/FAQ/FAQPhotoInfo/FAQPhotoInfoShowOf";
+import { IoDocument } from "react-icons/io5";
+import {
+  BadgeOnImageCode,
+  BadgeOnImageShowOf,
+} from "@/other/About/BadgeOnImage/BadgeOnImageShowOf";
+import {
+  ExpertAboudShowOf,
+  ExpertAboutCode,
+} from "@/other/About/ExpertAbout/ExpertAboudShowOf";
 
 const componentsData = [
   {
@@ -168,6 +177,20 @@ const componentsData = [
     name: "FAQ with contact info",
     showOf: <FAQPhotoInfoShowOf />,
     code: FAQPhotoInfoCode,
+  },
+  {
+    type: "About",
+    icon: <IoDocument />,
+    name: "Badge on image",
+    showOf: <BadgeOnImageShowOf />,
+    code: BadgeOnImageCode,
+  },
+  {
+    type: "About",
+    icon: <IoDocument />,
+    name: "Expert Photo",
+    showOf: <ExpertAboudShowOf />,
+    code: ExpertAboutCode,
   },
 ];
 

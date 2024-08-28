@@ -1,5 +1,5 @@
 import { IoMdMenu } from "react-icons/io";
-import { FaMedal, FaPhone, FaQuestion } from "react-icons/fa";
+import { FaCheck, FaMedal, FaPhone, FaQuestion } from "react-icons/fa";
 import {
   GradientButtonCode,
   GradientButtonShowOf,
@@ -71,6 +71,7 @@ import {
   ExpertAboudShowOf,
   ExpertAboutCode,
 } from "@/other/About/ExpertAbout/ExpertAboudShowOf";
+import { StepsCode, StepsShowOf } from "@/other/Other/Steps/StepsShowOf";
 
 const componentsData = [
   {
@@ -191,6 +192,13 @@ const componentsData = [
     name: "Expert Photo",
     showOf: <ExpertAboudShowOf />,
     code: ExpertAboutCode,
+  },
+  {
+    type: "Other Sections",
+    icon: <FaCheck />,
+    name: "Steps",
+    showOf: <StepsShowOf />,
+    code: StepsCode,
   },
 ];
 

@@ -1,5 +1,11 @@
 import { IoMdMenu } from "react-icons/io";
-import { FaCheck, FaMedal, FaPhone, FaQuestion } from "react-icons/fa";
+import {
+  FaCheck,
+  FaDollarSign,
+  FaMedal,
+  FaPhone,
+  FaQuestion,
+} from "react-icons/fa";
 import {
   GradientButtonCode,
   GradientButtonShowOf,
@@ -72,6 +78,18 @@ import {
   ExpertAboutCode,
 } from "@/other/About/ExpertAbout/ExpertAboudShowOf";
 import { StepsCode, StepsShowOf } from "@/other/Other/Steps/StepsShowOf";
+import {
+  CostInCircleCode,
+  CostInCircleShowOf,
+} from "@/other/Pricing/CostInCircle/CostInCircleShowOf";
+import {
+  HoverRevealCode,
+  HoverRevealShowOf,
+} from "@/other/Services/HoverReveal/HoverRevealShowOf";
+import {
+  SwiperServiceCode,
+  SwiperServiceShowOf,
+} from "@/other/Services/SwiperService/SwiperServiceShowOf";
 
 const componentsData = [
   {
@@ -192,6 +210,27 @@ const componentsData = [
     name: "Expert Photo",
     showOf: <ExpertAboudShowOf />,
     code: ExpertAboutCode,
+  },
+  {
+    type: "Services",
+    icon: <FaDollarSign />,
+    name: "Reveal on Hover",
+    showOf: <HoverRevealShowOf />,
+    code: HoverRevealCode,
+  },
+  {
+    type: "Services",
+    icon: <FaDollarSign />,
+    name: "Swiper Service",
+    showOf: <SwiperServiceShowOf />,
+    code: SwiperServiceCode,
+  },
+  {
+    type: "Pricing",
+    icon: <FaDollarSign />,
+    name: "Cost in circle",
+    showOf: <CostInCircleShowOf />,
+    code: CostInCircleCode,
   },
   {
     type: "Other Sections",

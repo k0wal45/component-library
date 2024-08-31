@@ -1,7 +1,7 @@
 "use client";
 import ComponentShowcase from "@/components/ComponentShowcase/ComponentShowcase";
 import componentsData from "@/DATA/data";
-import { filterComponentsBySlug } from "@/DATA/helpers";
+import { filterComponentsBySlug } from "@/lib/helpers";
 import Link from "next/link";
 import { useParams } from "next/navigation";
 import React from "react";

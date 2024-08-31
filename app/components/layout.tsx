@@ -1,5 +1,5 @@
 import componentsData from "@/DATA/data";
-import { createLink, groupComponentsByType } from "@/DATA/helpers";
+import { createLink, groupComponentsByType } from "@/lib/helpers";
 import Link from "next/link";
 import React from "react";
 import { IoFileTrayStackedSharp } from "react-icons/io5";
@@ -16,6 +16,8 @@ const Layout = ({
 }>) => {
   // Group the components by their type
   const components = groupComponentsByType(componentsData);
+
+  console.log(components);
 
   return (
     <main className="flex justify-center">

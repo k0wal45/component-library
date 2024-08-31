@@ -1,6 +1,6 @@
 import LinkToComponent from "@/components/ComponentShowcase/LinkToComponent";
 import componentsData from "@/DATA/data";
-import { createLink, groupComponentsByType } from "@/DATA/helpers";
+import { createLink, groupComponentsByType } from "@/lib/helpers";
 import React from "react";
 
 interface ComponentGroup {

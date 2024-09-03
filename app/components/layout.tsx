@@ -17,8 +17,6 @@ const Layout = ({
   // Group the components by their type
   const components = groupComponentsByType(componentsData);
 
-  console.log(components);
-
   return (
     <main className="flex justify-center">
       <ul className="sticky top-0 left-0 hidden xl:flex flex-col h-screen w-[15rem] bg-white pt-20 px-2 overflow-scroll scroll-smooth scroll-hide">

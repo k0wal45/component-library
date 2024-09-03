@@ -90,6 +90,10 @@ import {
   SwiperServiceCode,
   SwiperServiceShowOf,
 } from "@/other/Services/SwiperService/SwiperServiceShowOf";
+import {
+  BlogPostCardCode,
+  BlogPostCardShowOf,
+} from "@/other/Cards/BlogPostCard/BlogPostCardShowOf";
 
 const componentsData = [
   {
@@ -147,6 +151,13 @@ const componentsData = [
     name: "Shuffle in back",
     showOf: <ShuffleInBackShowOf />,
     code: ShuffleInBackCode,
+  },
+  {
+    type: "Cards",
+    icon: <CgCardDiamonds />,
+    name: "Blog post card",
+    showOf: <BlogPostCardShowOf />,
+    code: BlogPostCardCode,
   },
   {
     type: "Contact",

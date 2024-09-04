@@ -2,6 +2,7 @@ import { IoMdMenu } from "react-icons/io";
 import {
   FaCheck,
   FaDollarSign,
+  FaExclamation,
   FaMedal,
   FaPhone,
   FaQuestion,
@@ -94,6 +95,10 @@ import {
   BlogPostCardCode,
   BlogPostCardShowOf,
 } from "@/other/Cards/BlogPostCard/BlogPostCardShowOf";
+import {
+  GridNewsCode,
+  GridNewsShowOf,
+} from "@/other/news/GridNews/GridNewsShowOf";
 
 const componentsData = [
   {
@@ -242,6 +247,13 @@ const componentsData = [
     name: "Cost in circle",
     showOf: <CostInCircleShowOf />,
     code: CostInCircleCode,
+  },
+  {
+    type: "News",
+    icon: <FaExclamation />,
+    name: "News Grid",
+    showOf: <GridNewsShowOf />,
+    code: GridNewsCode,
   },
   {
     type: "Other Sections",

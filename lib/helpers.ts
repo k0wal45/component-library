@@ -36,11 +36,6 @@ export const groupComponentsByType = (
     a.type.localeCompare(b.type)
   );
 
-  // Sort names alphabetically within each group
-  sortedGroups.forEach((group) => {
-    group.names.sort((a, b) => a.localeCompare(b));
-  });
-
   return sortedGroups;
 };
 

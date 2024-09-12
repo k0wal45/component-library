@@ -31,7 +31,12 @@ export const groupComponentsByType = (
     groupedComponents[type].names.push(name);
   });
 
-  return Object.values(groupedComponents);
+  // Convert the grouped components object to an array and sort by type
+  const sortedGroups = Object.values(groupedComponents).sort((a, b) =>
+    a.type.localeCompare(b.type)
+  );
+
+  return sortedGroups;
 };
 
 export const createLink = (string: string) => {

@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import Code from "./Code";
 import Toggle from "./Toggle";
-import { createLink } from "@/DATA/helpers";
+import { createLink } from "@/lib/helpers";
 
 const ComponentShowcase = ({ component }: any) => {
   const [selected, setSelected] = useState(true);
@@ -18,7 +18,7 @@ const ComponentShowcase = ({ component }: any) => {
         <div
           className={`${
             !selected ? "hidden" : "block"
-          } border-[1px] border-neutral-300`}
+          } border-[1px] border-neutral-300 hide-navbar-overflow`}
           id={createLink(component.name)}
         >
           {component.showOf}
